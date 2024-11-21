@@ -13,4 +13,4 @@ jobs:
 
       - name: "Run script"
         run: |
-          bash ./start.sh
+          bash ./start.sh "Szczecin"
