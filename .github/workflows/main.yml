@@ -13,4 +13,4 @@ jobs:
 
       - name: "Run script"
         run: |
-          bash ./start.sh "Szczecin"
+          bash ./start.sh "Szczecin" "${{ secrets.API_KEY }}"

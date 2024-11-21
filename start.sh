@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # Twój klucz API dla OpenWeatherMap
-API_KEY="7cff9972d5c98a9a47ddf6a59cb34d8e"
+API_KEY=$2
 
 # Sprawdzenie, czy podano miasto
 if [ -z "$1" ]; then
