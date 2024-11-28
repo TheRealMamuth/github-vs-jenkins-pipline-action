@@ -2,6 +2,11 @@ name: "Pogoda info"
 
 on:
   workflow_dispatch:
+    inputs:
+      city:
+        description: "Miasto"
+        required: true
+        default: "Szczecin"
 
 jobs:
   pogoda_dla_miasta:
@@ -13,4 +18,4 @@ jobs:
 
       - name: "Run script"
         run: |
-          bash ./start.sh "Szczecin" "${{ secrets.API_KEY }}"
+          bash ./start.sh "${{ github.event.inputs.city }}" "${{ secrets.API_KEY }}"
